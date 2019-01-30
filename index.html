@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<header id="header" class="header">
+		<img src="assets/images/heart-icon.svg" alt="" class="background-heart">
+		<div class="nav sticky">
+			<a href="#header"><img class="navicon navicon-logo" src="assets/images/logo.svg"></a>
+			<nav>
+				<ul class="navmenu">
+					<li><a href="#header" class="active">Конкурс</a></li>
+					<li><a href="#members-list-section">Участники</a></li>
+					<li><a href="#conditions-section">Условия</a></li>
+					<li><a href="#prize-section">Призы</a></li>
+					<li><a href="#bonus-section">Бонусные баллы</a></li>
+					<li><a href="#result-section">Результаты</a></li>
+				</ul>
+			</nav>
+			<img class="navicon navicon-inst" src="assets/images/inst-icon.svg">
+		</div>
+			<div class="header-container header-col">
+				<div class="h1-wrapper">
+					<h1 class="h1"><span class="string"><span class="not-pink">конкурс </span>неделя</span><span class="string"> ваших сердец</span></h1>
+				</div>
+				<div class="conditions">
+					<div class="main-items-animation">
+						<h4 class="h4">Условия конкурса</h4>
+						<div class="conditions-ctn">
+							<div class="condition-list">
+								<div class="condition-item">
+									<div class="circle"></div>
+									<div class="condition-item-number">1</div>
+									<div class="condition-item-label">Подпишись</div>
+								</div>
+								<div class="condition-item">
+									<div class="circle"></div>
+									<div class="condition-item-number">2</div>
+									<div class="condition-item-label">Поставь LIKE</div>
+								</div>
+								<div class="condition-item">
+									<div class="circle circle-win">
+										<img src="assets/images/win-icon.svg" alt="" class="main-win-icon">
+									</div>
+									<div class="condition-item-label"></div>
+									<div class="condition-item-label win-label">Выиграй этот костюм</div>
+								</div>
+							</div>
+							<a class="btn main-btn" href="">Подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div class="timer-block">
+					<div class="main-items-animation">
+						<h4 id="time-left-text" class="h4">У тебя есть <span id="time-left">7 дней</span>, успей выиграть костюм</h4>
+						<div class="timer">
+							<span class="timer-element">
+								<div class="number-wrapper days-wrapper">
+									<span id="days" class="timer-number">07</span>
+								</div>
+								<span class="timer-text">дней</span>
+							</span>
+							<span class="timer-separator">:</span>
+							<span class="timer-element">
+								<div class="number-wrapper hours-wrapper">
+									<span id="hours" class="timer-number">00</span>
+								</div>
+								<span class="timer-text">часов</span>
+							</span>
+							<span class="timer-separator">:</span>
+							<span class="timer-element">
+								<div class="number-wrapper minutes-wrapper">
+									<span id="minutes" class="timer-number">00</span>
+								</div>
+								<span class="timer-text">минут</span>
+							</span>
+							<span class="timer-separator">:</span>
+							<span class="timer-element">
+								<div class="number-wrapper seconds-wrapper">
+									<span id="seconds" class="timer-number timer-number-all">00</span>
+								</div>
+								<span class="timer-text">секунд</span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-col-img-wrap header-col">
+				<div class="header-col-img"></div>
+			</div>
+	</header>
+	<div class="border border-left"></div>
+	<div class="border border-right"></div>
+	<section id="members-list-section" class="section gray-section padding-top">
+		<div class="container">
+			<div class="h2-container">
+				<h2 class="h2 slideUp-element">Список участников</h2>
+			</div>
+			<div class="tabs fadeIn-element">
+			<div class="members-filters clearfix">
+				<ul class="members-filters-list tabs__caption">
+					<li class="active-tab">Недельный конкурс</li>
+					<li>Сезонный конкурс</li>
+					<li>Топ 50</li>
+				</ul>
+				<a href="#" class="btn members-filters-btn">Найти себя</a>
+			</div>
+			<div class="members-grid ">
+				<div class="members-grid-header">
+					<div class="members-col1 col">Участники</div>
+					<div class="members-col2 col">Like</div>
+					<div class="members-col3 col">Бонусные баллы</div>
+					<div class="members-col4 col">Профиль</div>
+					<div class="members-col5 col">Итог</div>
+				</div>
+					<div class="members-grid-items tabs__content active-tab">
+						<div class="members-grid-item">
+							<div class="members-col1 col">
+							<div class="user">
+								<img class="user-avatar" src="assets/images/user-image.jpg" alt="">
+								<span class="user-login">Tina_gaznanova</span>
+							</div>
+							</div>
+							<div class="members-col2 col">
+								<div class="tooltip likes likes-green">
+									<span class="likes-big">1</span> 10/10
+									<span class="tooltiptext"><span class="tooltip-text">Like</span><span class="tooltip-text tooltip-text-second">10/10 лайков</span></span>
+								</div>
+							</div>
+							<div class="members-col3 col">
+								<div class="bonus-block">
+									<div class="bonus" data-max-value="1" data-current-value="0"></div>
+									<div class="bonus" data-max-value="1" data-current-value="0.5"></div>
+									<div class="bonus" data-max-value="1" data-current-value="1"></div>
+								</div>
+							</div>
+							<div class="members-col4 col">
+								<a href="#" class="rectangle">
+									<img class="user-icon" src="assets/images/user-icon.svg" alt="">
+								</a>
+							</div>
+							<div class="members-col5 col">
+								<div class="rating-number">
+									<span class="rating rating-top">1</span>
+								</div>
+							</div>
+						</div>
+						<div class="members-grid-item">
+							<div class="members-col1 col">
+							<div class="user">
+								<img class="user-avatar" src="assets/images/user-image.jpg" alt="">
+								<span class="user-login">Tina_gaznanova</span>
+							</div>
+							</div>
+							<div class="members-col2 col">
+								<div class="tooltip likes likes-green">
+									<span class="likes-big">1</span> 10/10
+									<span class="tooltiptext"><span class="tooltip-text">Like</span><span class="tooltip-text tooltip-text-second">10/10 лайков</span></span>
+								</div>
+							</div>
+							<div class="members-col3 col">
+								<div class="bonus-block">
+									<div class="bonus" data-max-value="10" data-current-value="4"></div>
+									<div class="bonus" data-max-value="1" data-current-value="0.2"></div>
+									<div class="bonus" data-max-value="2" data-current-value="2"></div>
+								</div>
+							</div>
+							<div class="members-col4 col">
+								<a href="#" class="rectangle">
+									<img class="user-icon" src="assets/images/user-icon.svg" alt="">
+								</a>
+							</div>
+							<div class="members-col5 col">
+								<div class="rating-number">
+									<span class="rating rating-top">2</span>
+								</div>
+							</div>
+						</div>
+						<div class="members-grid-item">
+							<div class="members-col1 col">
+							<div class="user">
+								<img class="user-avatar" src="assets/images/user-image.jpg" alt="">
+								<span class="user-login">Tina_gaznanova</span>
+							</div>
+							</div>
+							<div class="members-col2 col">
+								<div class="tooltip likes likes-red">
+									<span class="likes-big">0</span> 7/10
+									<span class="tooltiptext"><span class="tooltip-text">Like</span><span class="tooltip-text tooltip-text-second">7/10 лайков</span></span>
+								</div>
+							</div>
+							<div class="members-col3 col">
+								<div class="bonus-block">
+									<div class="bonus-block">
+										<div class="bonus" data-max-value="0.5" data-current-value="0.1"></div>
+										<div class="bonus" data-max-value="1" data-current-value="0.5"></div>
+										<div class="bonus" data-max-value="1" data-current-value="0"></div>
+									</div>
+								</div>
+							</div>
+							<div class="members-col4 col">
+								<a href="#" class="rectangle">
+									<img class="user-icon" src="assets/images/user-icon.svg" alt="">
+								</a>
+							</div>
+							<div class="members-col5 col">
+								<div class="rating-number">
+									<span class="rating rating-top">3</span>
+								</div>
+							</div>
+						</div>
+						<div class="members-grid-item">
+							<div class="members-col1 col">
+							<div class="user">
+								<img class="user-avatar" src="assets/images/user-image.jpg" alt="">
+								<span class="user-login">Tina_gaznanova</span>
+							</div>
+							</div>
+							<div class="members-col2 col">
+								<div class="tooltip likes likes-red">
+									<span class="likes-big">0</span> 3/10
+									<span class="tooltiptext"><span class="tooltip-text">Like</span><span class="tooltip-text tooltip-text-second">3/10 лайков</span></span>
+								</div>
+							</div>
+							<div class="members-col3 col">
+								<div class="bonus-block">
+									<div class="bonus" data-max-value="0.5" data-current-value="0.3"></div>
+									<div class="bonus" data-max-value="4" data-current-value="0.5"></div>
+									<div class="bonus" data-max-value="2" data-current-value="1"></div>
+								</div>
+							</div>
+							<div class="members-col4 col">
+								<a href="#" class="rectangle">
+									<img class="user-icon" src="assets/images/user-icon.svg" alt="">
+								</a>
+							</div>
+							<div class="members-col5 col">
+								<div class="rating-number">
+									<span class="rating">0.5</span>
+								</div>
+							</div>
+						</div>
+						<div class="members-grid-item">
+							<div class="members-col1 col">
+							<div class="user">
+								<img class="user-avatar" src="assets/images/user-image.jpg" alt="">
+								<span class="user-login">Tina_gaznanova</span>
+							</div>
+							</div>
+							<div class="members-col2 col">
+								<div class="tooltip likes likes-red">
+									<span class="likes-big">0</span> 0/10
+									<span class="tooltiptext"><span class="tooltip-text">Like</span><span class="tooltip-text tooltip-text-second">0/10 лайков</span></span>
+								</div>
+							</div>
+							<div class="members-col3 col">
+								<div class="bonus-block">
+									<div class="bonus" data-max-value="0.5" data-current-value="0"></div>
+									<div class="bonus" data-max-value="0.3" data-current-value="0.1"></div>
+									<div class="bonus" data-max-value="11" data-current-value="9"></div>
+								</div>
+							</div>
+							<div class="members-col4 col">
+								<a href="#" class="rectangle">
+									<img class="user-icon" src="assets/images/user-icon.svg" alt="">
+								</a>
+							</div>
+							<div class="members-col5 col">
+								<div class="rating-number">
+									<span class="rating">0.5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="members-grid-items tabs__content">
+						<div class="members-grid-item">
+							<div class="members-col1 col">
+								<div class="user">
+									<img class="user-avatar" src="assets/images/user-image.jpg" alt="">
+									<span class="user-login">123</span>
+								</div>
+							</div>
+							<div class="members-col2 col">
+								<div class="tooltip likes likes-green">
+									<span class="likes-big">1</span> 10/10
+									<span class="tooltiptext"><span class="tooltip-text">Like</span><span class="tooltip-text tooltip-text-second">10/10 лайков</span></span>
+								</div>
+							</div>
+							<div class="members-col3 col">
+								<div class="bonus-block">
+									<div class="bonus" data-max-value="1" data-current-value="0"></div>
+									<div class="bonus" data-max-value="1" data-current-value="0.5"></div>
+									<div class="bonus" data-max-value="1" data-current-value="1"></div>
+								</div>
+							</div>
+							<div class="members-col4 col">
+								<a href="#" class="rectangle">
+									<img class="user-icon" src="assets/images/user-icon.svg" alt="">
+								</a>
+							</div>
+							<div class="members-col5 col">
+								<div class="rating-number">
+									<span class="rating rating-top">1</span>
+								</div>
+							</div>
+						</div>
+						<div class="members-grid-item">
+							<div class="members-col1 col">
+								<div class="user">
+									<img class="user-avatar" src="assets/images/user-image.jpg" alt="">
+									<span class="user-login">123</span>
+								</div>
+							</div>
+							<div class="members-col2 col">
+								<div class="tooltip likes likes-green">
+									<span class="likes-big">1</span> 10/10
+									<span class="tooltiptext"><span class="tooltip-text">Like</span><span class="tooltip-text tooltip-text-second">10/10 лайков</span></span>
+								</div>
+							</div>
+							<div class="members-col3 col">
+								<div class="bonus-block">
+									<div class="bonus" data-max-value="10" data-current-value="4"></div>
+									<div class="bonus" data-max-value="1" data-current-value="0.2"></div>
+									<div class="bonus" data-max-value="2" data-current-value="2"></div>
+								</div>
+							</div>
+							<div class="members-col4 col">
+								<a href="#" class="rectangle">
+									<img class="user-icon" src="assets/images/user-icon.svg" alt="">
+								</a>
+							</div>
+							<div class="members-col5 col">
+								<div class="rating-number">
+									<span class="rating rating-top">2</span>
+								</div>
+							</div>
+						</div>
+						<div class="members-grid-item">
+							<div class="members-col1 col">
+								<div class="user">
+									<img class="user-avatar" src="assets/images/user-image.jpg" alt="">
+									<span class="user-login">Tina_gaznanova</span>
+								</div>
+							</div>
+							<div class="members-col2 col">
+								<div class="tooltip likes likes-red">
+									<span class="likes-big">0</span> 7/10
+									<span class="tooltiptext"><span class="tooltip-text">Like</span><span class="tooltip-text tooltip-text-second">7/10 лайков</span></span>
+								</div>
+							</div>
+							<div class="members-col3 col">
+								<div class="bonus-block">
+									<div class="bonus-block">
+										<div class="bonus" data-max-value="0.5" data-current-value="0.1"></div>
+										<div class="bonus" data-max-value="1" data-current-value="0.5"></div>
+										<div class="bonus" data-max-value="1" data-current-value="0"></div>
+									</div>
+								</div>
+							</div>
+							<div class="members-col4 col">
+								<a href="#" class="rectangle">
+									<img class="user-icon" src="assets/images/user-icon.svg" alt="">
+								</a>
+							</div>
+							<div class="members-col5 col">
+								<div class="rating-number">
+									<span class="rating rating-top">3</span>
+								</div>
+							</div>
+						</div>
+						<div class="members-grid-item">
+							<div class="members-col1 col">
+								<div class="user">
+									<img class="user-avatar" src="assets/images/user-image.jpg" alt="">
+									<span class="user-login">Tina_gaznanova</span>
+								</div>
+							</div>
+							<div class="members-col2 col">
+								<div class="tooltip likes likes-red">
+									<span class="likes-big">0</span> 3/10
+									<span class="tooltiptext"><span class="tooltip-text">Like</span><span class="tooltip-text tooltip-text-second">3/10 лайков</span></span>
+								</div>
+							</div>
+							<div class="members-col3 col">
+								<div class="bonus-block">
+									<div class="bonus" data-max-value="0.5" data-current-value="0.3"></div>
+									<div class="bonus" data-max-value="4" data-current-value="0.5"></div>
+									<div class="bonus" data-max-value="2" data-current-value="1"></div>
+								</div>
+							</div>
+							<div class="members-col4 col">
+								<a href="#" class="rectangle">
+									<img class="user-icon" src="assets/images/user-icon.svg" alt="">
+								</a>
+							</div>
+							<div class="members-col5 col">
+								<div class="rating-number">
+									<span class="rating">0.5</span>
+								</div>
+							</div>
+						</div>
+						<div class="members-grid-item">
+							<div class="members-col1 col">
+								<div class="user">
+									<img class="user-avatar" src="assets/images/user-image.jpg" alt="">
+									<span class="user-login">Tina_gaznanova</span>
+								</div>
+							</div>
+							<div class="members-col2 col">
+								<div class="tooltip likes likes-red">
+									<span class="likes-big">0</span> 0/10
+									<span class="tooltiptext"><span class="tooltip-text">Like</span><span class="tooltip-text tooltip-text-second">0/10 лайков</span></span>
+								</div>
+							</div>
+							<div class="members-col3 col">
+								<div class="bonus-block">
+									<div class="bonus" data-max-value="0.5" data-current-value="0"></div>
+									<div class="bonus" data-max-value="0.3" data-current-value="0.1"></div>
+									<div class="bonus" data-max-value="11" data-current-value="9"></div>
+								</div>
+							</div>
+							<div class="members-col4 col">
+								<a href="#" class="rectangle">
+									<img class="user-icon" src="assets/images/user-icon.svg" alt="">
+								</a>
+							</div>
+							<div class="members-col5 col">
+								<div class="rating-number">
+									<span class="rating">0.5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="members-grid-items tabs__content">
+						<div class="members-grid-item">
+							<div class="members-col1 col">
+								<div class="user">
+									<img class="user-avatar" src="assets/images/user-image.jpg" alt="">
+									<span class="user-login">000</span>
+								</div>
+							</div>
+							<div class="members-col2 col">
+								<div class="tooltip likes likes-green">
+									<span class="likes-big">1</span> 10/10
+									<span class="tooltiptext"><span class="tooltip-text">Like</span><span class="tooltip-text tooltip-text-second">10/10 лайков</span></span>
+								</div>
+							</div>
+							<div class="members-col3 col">
+								<div class="bonus-block">
+									<div class="bonus" data-max-value="1" data-current-value="0"></div>
+									<div class="bonus" data-max-value="1" data-current-value="0.5"></div>
+									<div class="bonus" data-max-value="1" data-current-value="1"></div>
+								</div>
+							</div>
+							<div class="members-col4 col">
+								<a href="#" class="rectangle">
+									<img class="user-icon" src="assets/images/user-icon.svg" alt="">
+								</a>
+							</div>
+							<div class="members-col5 col">
+								<div class="rating-number">
+									<span class="rating rating-top">1</span>
+								</div>
+							</div>
+						</div>
+						<div class="members-grid-item">
+							<div class="members-col1 col">
+								<div class="user">
+									<img class="user-avatar" src="assets/images/user-image.jpg" alt="">
+									<span class="user-login">000</span>
+								</div>
+							</div>
+							<div class="members-col2 col">
+								<div class="tooltip likes likes-green">
+									<span class="likes-big">1</span> 10/10
+									<span class="tooltiptext"><span class="tooltip-text">Like</span><span class="tooltip-text tooltip-text-second">10/10 лайков</span></span>
+								</div>
+							</div>
+							<div class="members-col3 col">
+								<div class="bonus-block">
+									<div class="bonus" data-max-value="10" data-current-value="4"></div>
+									<div class="bonus" data-max-value="1" data-current-value="0.2"></div>
+									<div class="bonus" data-max-value="2" data-current-value="2"></div>
+								</div>
+							</div>
+							<div class="members-col4 col">
+								<a href="#" class="rectangle">
+									<img class="user-icon" src="assets/images/user-icon.svg" alt="">
+								</a>
+							</div>
+							<div class="members-col5 col">
+								<div class="rating-number">
+									<span class="rating rating-top">2</span>
+								</div>
+							</div>
+						</div>
+						<div class="members-grid-item">
+							<div class="members-col1 col">
+								<div class="user">
+									<img class="user-avatar" src="assets/images/user-image.jpg" alt="">
+									<span class="user-login">Tina_gaznanova</span>
+								</div>
+							</div>
+							<div class="members-col2 col">
+								<div class="tooltip likes likes-red">
+									<span class="likes-big">0</span> 7/10
+									<span class="tooltiptext"><span class="tooltip-text">Like</span><span class="tooltip-text tooltip-text-second">7/10 лайков</span></span>
+								</div>
+							</div>
+							<div class="members-col3 col">
+								<div class="bonus-block">
+									<div class="bonus-block">
+										<div class="bonus" data-max-value="0.5" data-current-value="0.1"></div>
+										<div class="bonus" data-max-value="1" data-current-value="0.5"></div>
+										<div class="bonus" data-max-value="1" data-current-value="0"></div>
+									</div>
+								</div>
+							</div>
+							<div class="members-col4 col">
+								<a href="#" class="rectangle">
+									<img class="user-icon" src="assets/images/user-icon.svg" alt="">
+								</a>
+							</div>
+							<div class="members-col5 col">
+								<div class="rating-number">
+									<span class="rating rating-top">3</span>
+								</div>
+							</div>
+						</div>
+						<div class="members-grid-item">
+							<div class="members-col1 col">
+								<div class="user">
+									<img class="user-avatar" src="assets/images/user-image.jpg" alt="">
+									<span class="user-login">Tina_gaznanova</span>
+								</div>
+							</div>
+							<div class="members-col2 col">
+								<div class="tooltip likes likes-red">
+									<span class="likes-big">0</span> 3/10
+									<span class="tooltiptext"><span class="tooltip-text">Like</span><span class="tooltip-text tooltip-text-second">3/10 лайков</span></span>
+								</div>
+							</div>
+							<div class="members-col3 col">
+								<div class="bonus-block">
+									<div class="bonus" data-max-value="0.5" data-current-value="0.3"></div>
+									<div class="bonus" data-max-value="4" data-current-value="0.5"></div>
+									<div class="bonus" data-max-value="2" data-current-value="1"></div>
+								</div>
+							</div>
+							<div class="members-col4 col">
+								<a href="#" class="rectangle">
+									<img class="user-icon" src="assets/images/user-icon.svg" alt="">
+								</a>
+							</div>
+							<div class="members-col5 col">
+								<div class="rating-number">
+									<span class="rating">0.5</span>
+								</div>
+							</div>
+						</div>
+						<div class="members-grid-item">
+							<div class="members-col1 col">
+								<div class="user">
+									<img class="user-avatar" src="assets/images/user-image.jpg" alt="">
+									<span class="user-login">Tina_gaznanova</span>
+								</div>
+							</div>
+							<div class="members-col2 col">
+								<div class="tooltip likes likes-red">
+									<span class="likes-big">0</span> 0/10
+									<span class="tooltiptext"><span class="tooltip-text">Like</span><span class="tooltip-text tooltip-text-second">0/10 лайков</span></span>
+								</div>
+							</div>
+							<div class="members-col3 col">
+								<div class="bonus-block">
+									<div class="bonus" data-max-value="0.5" data-current-value="0"></div>
+									<div class="bonus" data-max-value="0.3" data-current-value="0.1"></div>
+									<div class="bonus" data-max-value="11" data-current-value="9"></div>
+								</div>
+							</div>
+							<div class="members-col4 col">
+								<a href="#" class="rectangle">
+									<img class="user-icon" src="assets/images/user-icon.svg" alt="">
+								</a>
+							</div>
+							<div class="members-col5 col">
+								<div class="rating-number">
+									<span class="rating">0.5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				<a href=""><div class="members-show-more">
+					<div class="members-show-more-text">Показать еще</div>
+				</div></a>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section  id="conditions-section" class="section gray-section padding-top">
+		<div class="container">
+			<div class="h2-container">
+				<h2 class="h2 slideUp-element">Условия конкурса</h2>
+			</div>
+			<div class="conditions-block fadeIn-element">
+				<p class="conditions-text">Что-бы выиграть одежду нашего собственного производста, тебе необходимо<br>выполнить 3 простых шага:</p>
+				<div class="conditions-items">
+					<div class="conditions-item">
+						<div class="conditions-heading">1. Подписаться на нас</div>
+						<p class="conditions-item-text">Подпишись на наши ДВЕ страницы <a href="">@1313.shop</a> и <a href="">@1313.studio</a></p>
+					</div>
+					<div class="conditions-item">
+						<div class="conditions-heading">2. Поставить Like</div>
+						<p class="conditions-item-text">Поставь LIKE и добавь в закладки все публикации начиная с этой в течении 7 дней</p>
+					</div>
+					<div class="conditions-item conditions-item-last">
+						<div class="conditions-heading">3. Выиграть приз</div>
+						<p class="conditions-item-text">Победительница будет определена 24 октября в прямом эфире на нашей страничке в <a href="">instagram</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="prize-section" class="section gray-section padding-top prize-section">
+		<div class="container">
+			<div class="h2-container">
+				<h2 class="h2 slideUp-element">Призы</h2>
+			</div>
+			<div class="prize-items fadeIn-element">
+				<div class="prize-item">
+					<img src="assets/images/1st-place.png" alt="" class="prize-item-image">
+					<div class="prize-item-heading">Костюм</div>
+					<div class="prize-item-text">нашего собственного производства</div>
+				</div>
+				<div class="prize-item">
+					<img src="assets/images/2nd-place.png" alt="" class="prize-item-image">
+					<div class="prize-item-heading">Скидка 20%</div>
+					<div class="prize-item-text">на всю нашу продукцию</div>
+					<div class="prize-item-btn">
+						<a href="" class="btn">Стань спонсором</a>
+					</div>
+				</div>
+				<div class="prize-item">
+					<img src="assets/images/3rd-place.png" alt="" class="prize-item-image">
+					<div class="prize-item-heading">Скидка 15%</div>
+					<div class="prize-item-text">на всю нашу продукцию</div>
+				</div>
+				<div class="prize-item">
+					<img src="assets/images/4th-place.png" alt="" class="prize-item-image">
+					<div class="prize-item-heading">Скидка 10%</div>
+					<div class="prize-item-text">на всю нашу продукцию</div>
+				</div>
+				<div class="prize-item">
+					<img src="assets/images/all.png" alt="" class="prize-item-image">
+					<div class="prize-item-heading">Скидка 5%</div>
+					<div class="prize-item-text">на всю нашу продукцию</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="bonus-section" class="section">
+		<div class="yellow-section padding-top">
+			<div class="container">
+				<div class="h2-container">
+					<h2 class="h2 slideUp-yellow-element">Бонусные баллы</h2>
+				</div>
+				<p class="bonus-score-text fadeIn-yellow-element">С нашей системой бонусных баллов ты сможешь увеличить шанс на выигрыш в 3 раза!</p>
+				<div class="bonus-content-section fadeIn-yellow-element">
+					<h5 class="h5">Как это работает?</h5>
+					<div class="how-works-items">
+						<div class="how-works-item">
+							<div class="how-works-content">
+								<div class="how-works-heading">1 балл</div>
+								<div class="how-works-text">Ты в списке номинантов на выигрыш</div>
+							</div>
+								<div class="how-works-scale">1X</div>
+						</div>
+						<div class="how-works-item">
+							<div class="how-works-content">
+								<div class="how-works-heading">2 балла</div>
+								<div class="how-works-text">Шанс выиграть приз увеличивается в 2 раза</div>
+							</div>
+							<div class="how-works-scale">2X</div>
+						</div>
+						<div class="how-works-item">
+							<div class="how-works-content">
+								<div class="how-works-heading">3 балла</div>
+								<div class="how-works-text">Шанс выиграть приз увеличивается в 3 раза</div>
+							</div>
+							<div class="how-works-scale">3X</div>
+						</div>
+					</div>
+				</div>
+				<div class="bonus-content-section fadeIn-yellow-element">
+					<h5 class="h5">Как набрать баллы?</h5>
+					<div class="how-works-items-rows">
+						<div class="how-works-items">
+							<div class="how-works-item how-works-item-l">
+								<div class="how-works-content">
+									<div class="how-works-heading how-works-heading-l">Выполнение основных условий конкурса</div>
+									<div class="how-works-text-l">Подпишись на наши аккаунты, лайк публикаций и добавление в закладки</div>
+								</div>
+									<div class="how-works-scale how-choose-block-same">1
+										<div class="number-label">Балл</div>
+									</div>
+							</div>
+							<div class="how-works-item how-works-item-l">
+								<div class="how-works-content">
+									<div class="how-works-heading how-works-heading-l">Лайк сразу после публикации
+										<div class="tooltip tooltip-i">
+											<span class="i-icon"></span>
+											<span class="tooltiptext tooltiptext-i">Like(1 лайк = 0.1 балла). В недельном конкурсе максимум 1 балл. В конкурсе “топ 50” без ограничений </span>
+										</div>
+									</div>
+
+									<div class="how-works-text-l">Ставь лайки в течении часа после публикации</div>
+								</div>
+								<div class="how-works-scale how-choose-block-same">1
+									<div class="number-label">Балл</div>
+								</div>
+							</div>
+						</div>
+						<div class="how-works-items">
+							<div class="how-works-item how-works-item-l">
+								<div class="how-works-content">
+									<div class="how-works-heading how-works-heading-l">Участие в предыдущем конкурсе</div>
+									<div class="how-works-text-l">Был в списке претендентов на выигрыш в предыдущем конкурсе</div>
+								</div>
+									<div class="how-works-scale how-choose-block-same">0.5
+										<div class="number-label">Балла</div>
+									</div>
+							</div>
+							<div class="how-works-item how-works-item-l">
+								<div class="how-works-content">
+									<div class="how-works-heading how-works-heading-l">Отметка друга
+										<div class="tooltip tooltip-i">
+											<span class="i-icon"></span>
+											<span class="tooltiptext tooltiptext-i">Like(1 лайк = 0.1 балла). В недельном конкурсе максимум 1 балл. В конкурсе “топ 50” без ограничений </span>
+										</div>
+									</div>
+									<div class="how-works-text-l">Отметь друга и получи балл</div>
+								</div>
+								<div class="how-works-scale how-choose-block-same">0.5
+									<div class="number-label">Балла</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="result-section" class="section gray-section padding-top">
+		<div class="container">
+			<div class="draw-container">
+				<div class="h2-container">
+					<h2 class="h2 slideUp-element">Результаты конкурсов</h2>
+				</div>
+				<div class="draw-content-container fadeIn-element">
+					<div class="filters">
+						<div class="filter-year filter-groop">
+							<div class="filter-label">Год</div>
+							<div class="custom-select">
+								<select class="select-year">
+									<option>2019</option>
+									<option>2018</option>
+									<option>2017</option>
+									<option>2016</option>
+									<option>2015</option>
+								</select>
+							</div>
+						</div>
+						<div class="filter-month filter-groop">
+							<div class="filter-label">Месяц</div>
+							<div class="custom-select">
+								<select>
+									<option>Январь</option>
+									<option>Февраль</option>
+									<option>Март</option>
+									<option>Апрель</option>
+									<option>Май</option>
+									<option>Июнь</option>
+									<option>Июль</option>
+									<option>Август</option>
+									<option>Сентябрь</option>
+									<option>Октябрь</option>
+									<option>Ноябрь</option>
+									<option>Декабрь</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="draw-items">
+						<div class="draw-item">
+							<img class="draw-image" src="assets/images/draw-image.jpg" alt="">
+							<div class="draw-info">
+								<div class="draw-info-heading">Неделя лайков</div>
+								<div class="draw-info-plate">
+									<div class="draw-info-date"><span class="gray-text">Дата розыгрыша:</span> 10 Октября 2018</div>
+									<div class="draw-info-quantity"><span class="gray-text">Количество участников:</span> 126</div>
+									<div class="draw-info-member">
+										<img class="draw-image-members" src="assets/images/user-image.jpg" alt="">
+										<img class="draw-image-members" src="assets/images/user-image.jpg" alt="">
+										<img class="draw-image-members" src="assets/images/user-image.jpg" alt="">
+										<img class="draw-image-members" src="assets/images/user-image.jpg" alt="">
+										<img class="draw-image-members" src="assets/images/user-image.jpg" alt="">
+										<img class="draw-image-members" src="assets/images/user-image.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<a href="" class="btn draw-btn">Подробнее</a>
+						</div>
+						<div class="draw-item">
+							<img class="draw-image" src="assets/images/draw-image.jpg" alt="">
+							<div class="draw-info">
+								<div class="draw-info-heading">Неделя лайков</div>
+								<div class="draw-info-plate">
+									<div class="draw-info-date"><span class="gray-text">Дата розыгрыша:</span> 10 Октября 2018</div>
+									<div class="draw-info-quantity"><span class="gray-text">Количество участников:</span> 126</div>
+									<div class="draw-info-member">
+										<img class="draw-image-members" src="assets/images/user-image.jpg" alt="">
+										<img class="draw-image-members" src="assets/images/user-image.jpg" alt="">
+										<img class="draw-image-members" src="assets/images/user-image.jpg" alt="">
+										<img class="draw-image-members" src="assets/images/user-image.jpg" alt="">
+										<img class="draw-image-members" src="assets/images/user-image.jpg" alt="">
+										<img class="draw-image-members" src="assets/images/user-image.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<a href="" class="btn draw-btn">Подробнее</a>
+						</div>
+						<div class="draw-item">
+							<img class="draw-image" src="assets/images/draw-image.jpg" alt="">
+							<div class="draw-info">
+								<div class="draw-info-heading">Неделя лайков</div>
+								<div class="draw-info-plate">
+									<div class="draw-info-date"><span class="gray-text">Дата розыгрыша:</span> 10 Октября 2018</div>
+									<div class="draw-info-quantity"><span class="gray-text">Количество участников:</span> 126</div>
+									<div class="draw-info-member">
+										<img class="draw-image-members" src="assets/images/user-image.jpg" alt="">
+										<img class="draw-image-members" src="assets/images/user-image.jpg" alt="">
+										<img class="draw-image-members" src="assets/images/user-image.jpg" alt="">
+										<img class="draw-image-members" src="assets/images/user-image.jpg" alt="">
+										<img class="draw-image-members" src="assets/images/user-image.jpg" alt="">
+										<img class="draw-image-members" src="assets/images/user-image.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<a href="" class="btn draw-btn">Подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<img class="logo-footer" src="assets/images/logo.svg">
+		<div class="number"><a href="tel:7 927 416 88 40">+7 927 416 88 40</a></div>
+		<img class="inst-icon" src="assets/images/inst-icon.svg">
+	</footer>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/anime.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
